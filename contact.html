@@ -86,7 +86,7 @@
         <div class="hero__inner">
           <p class="eyebrow hero-reveal">Contact</p>
           <h1 class="display-xl hero-headline hero__headline hero-reveal">Let's <em>talk.</em></h1>
-          <p class="body-lg hero__sub hero-reveal" style="max-width: 56ch;">Tell us about your business below and we'll get back to you within one business day. Or call directly — we pick up.</p>
+          <p class="body-lg hero__sub hero-reveal" style="max-width: 56ch;">Tell us about your business below and we'll get back to you within one business day.</p>
         </div>
       </div>
     </section>
@@ -99,10 +99,6 @@
 
           <!-- Contact info (top on mobile, right on desktop) -->
           <div class="contact-info contact-grid__info reveal">
-            <!-- <div class="contact-info__item">
-              <p class="eyebrow">Phone</p>
-              <a href="tel:+19312616703" class="contact-info__value tabular">(931) 261-6703</a>
-            </div> -->
             <div class="contact-info__item">
               <p class="eyebrow">Email</p>
               <a href="mailto:lpsservices1llc@gmail.com" class="contact-info__value">lpsservices1llc@gmail.com</a>
@@ -119,7 +115,10 @@
 
           <!-- Form -->
           <div class="contact-grid__form reveal">
-            <form id="contact-form" method="post" action="contact.php" novalidate>
+            <form id="contact-form" method="post" action="https://api.web3forms.com/submit" novalidate>
+              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+              <input type="hidden" name="subject" value="New consult request from LPS site">
+              <input type="hidden" name="from_name" value="LPS Website">
               <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
 
               <div class="form-status" data-status role="alert" aria-live="polite"></div>
@@ -187,7 +186,6 @@
         <div>
           <p class="site-footer__col-head">Contact</p>
           <ul class="site-footer__contact">
-            <!-- <li><a href="tel:+19312616703" class="tabular">(931) 261-6703</a></li> -->
             <li><a href="mailto:lpsservices1llc@gmail.com">lpsservices1llc@gmail.com</a></li>
             <li>Mon–Fri, 9am–5pm CT</li>
           </ul>

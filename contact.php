@@ -103,6 +103,6 @@ if ($sent) {
     http_response_code(500);
     echo json_encode([
         'success' => false,
-        'message' => 'Sorry — our mail server is unavailable. Please call us at (931) 261-6703.',
+        'message' => 'Sorry — our mail server is unavailable. Please email us directly at lpsservices1llc@gmail.com.',
     ]);
 }
