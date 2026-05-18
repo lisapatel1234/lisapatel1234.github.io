@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — LPS Bookkeeping</title>
+  <meta name="description" content="Get in touch with LPS for a free 30-minute bookkeeping consultation.">
+  <link rel="canonical" href="https://[final-domain].com/contact.html">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — LPS Bookkeeping">
+  <meta property="og:description" content="Get in touch with LPS for a free 30-minute bookkeeping consultation.">
+  <meta property="og:url" content="https://[final-domain].com/contact.html">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — LPS Bookkeeping">
+  <meta name="twitter:description" content="Get in touch with LPS for a free 30-minute bookkeeping consultation.">
+  <meta name="twitter:image" content="assets/img/og-image.jpg">
+
+  <link rel="preload" href="assets/fonts/Fraunces-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "LPS",
+    "description": "Bookkeeping, payroll, and tax filings for small businesses.",
+    "url": "https://[final-domain].com",
+    "telephone": "(931) 261-6703",
+    "areaServed": "United States",
+    "openingHours": "Mo-Fr 09:00-17:00"
+  }
+  </script>
+
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/reveal.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="index.html" class="wordmark" aria-label="LPS — home">LPS</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn--primary btn--md header-cta">Schedule a consult</a>
+        <button class="hamburger" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger__lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-menu data-open="false" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <button class="mobile-menu__close" type="button" data-menu-close aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" aria-hidden="true">
+          <path d="M4 4 L20 20 M20 4 L4 20"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__body" aria-label="Mobile primary">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--lg mobile-menu__cta">Schedule a consult</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <p class="eyebrow hero-reveal">Contact</p>
+          <h1 class="display-xl hero-headline hero__headline hero-reveal">Let's <em>talk.</em></h1>
+          <p class="body-lg hero__sub hero-reveal" style="max-width: 56ch;">Tell us about your business below and we'll get back to you within one business day. Or call directly — we pick up.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider-rule">
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact info (top on mobile, right on desktop) -->
+          <div class="contact-info contact-grid__info reveal">
+            <div class="contact-info__item">
+              <p class="eyebrow">Phone</p>
+              <a href="tel:+19312616703" class="contact-info__value tabular">(931) 261-6703</a>
+            </div>
+            <div class="contact-info__item">
+              <p class="eyebrow">Email</p>
+              <a href="mailto:lpsservices1llc@gmail.com" class="contact-info__value">lpsservices1llc@gmail.com</a>
+            </div>
+            <div class="contact-info__item">
+              <p class="eyebrow">Hours</p>
+              <p class="contact-info__value">Monday – Friday,<br>9am – 5pm CT</p>
+            </div>
+            <div class="contact-info__item">
+              <p class="eyebrow">Response time</p>
+              <p class="contact-info__value">One business day,<br>usually faster.</p>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-grid__form reveal">
+            <form id="contact-form" method="post" action="contact.php" novalidate>
+              <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+              <div class="form-status" data-status role="alert" aria-live="polite"></div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="name">Your name<span class="req" aria-hidden="true">*</span></label>
+                <input class="form-field__input" type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+                <p class="form-field__error" id="name-error"></p>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="email">Email<span class="req" aria-hidden="true">*</span></label>
+                <input class="form-field__input" type="email" id="email" name="email" inputmode="email" autocomplete="email" required aria-describedby="email-error">
+                <p class="form-field__error" id="email-error"></p>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="phone">Phone</label>
+                <input class="form-field__input" type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel">
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="business">Business name</label>
+                <input class="form-field__input" type="text" id="business" name="business" autocomplete="organization">
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="business_type">What kind of business?</label>
+                <input class="form-field__input" type="text" id="business_type" name="business_type" placeholder="e.g., salon, restaurant, contractor">
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="message">What do you need help with?<span class="req" aria-hidden="true">*</span></label>
+                <textarea class="form-field__textarea" id="message" name="message" rows="5" required aria-describedby="message-error" placeholder="Bookkeeping, payroll, taxes, catch-up, or just unsure — tell us what's going on."></textarea>
+                <p class="form-field__error" id="message-error"></p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg btn--block-mobile" data-submit>Send message</button>
+
+              <p class="form-note">We reply within one business day. No spam, no list-selling, ever.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="wordmark">LPS</a>
+          <p class="site-footer__tagline body">Bookkeeping for small businesses that need their time back.</p>
+          <p class="site-footer__address">Mt. Juliet, TN</p>
+        </div>
+        <div>
+          <p class="site-footer__col-head">Site</p>
+          <ul class="site-footer__links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__col-head">Contact</p>
+          <ul class="site-footer__contact">
+            <li><a href="tel:+19312616703" class="tabular">(931) 261-6703</a></li>
+            <li><a href="mailto:lpsservices1llc@gmail.com">lpsservices1llc@gmail.com</a></li>
+            <li>Mon–Fri, 9am–5pm CT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span id="year">2026</span> LPS. All rights reserved.</p>
+        <p>Built with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
